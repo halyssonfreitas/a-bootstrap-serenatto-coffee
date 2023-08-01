@@ -50,8 +50,10 @@ input[type="checkbox"]:focus {
 
 .accordion-button, .botao-padrao {
   background-color: var(--marrom-claro);
+  color: black;
 }
 
 .accordion-button:hover, .botao-padrao:hover {
   background-color: var(--marrom-escuro);
+  color: black;
 }
