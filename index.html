@@ -44,7 +44,7 @@
                 <a class="nav-link" href="#">Sobre</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
+                <a class="nav-link" href="#contato">Contato</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
@@ -67,7 +67,7 @@
         <p>Boas-vindas ao & Bistrô Serenatto! Um ambiente aconchegante e acolhedor para apreciar um bom café.</p>
       </div>
     </section>
-    <section class="py-5">
+    <!-- <section class="py-5">
       <h2 class="text-center fw-bold pb-1">Nossos serviços</h2>
 
       <div class="container d-flex justify-content-around flex-wrap">
@@ -117,7 +117,6 @@
           oferecemos ambiente de coworking!</p>
       </div>
     </section>
-
     <section class="py-5">
       <h2 class="fw-bold text-center pb-1">Nossos produtos</h2>
 
@@ -178,8 +177,46 @@
         </div>
       </div>
     </section>
-
     <section class="banners banner-3 d-flex flex-column justify-content-center text-center">
+    </section> -->
+    <section class="py-4 container d-flex flex-column justify-content-center text-center">
+      <div class="border border-2 rounded p-3">
+        <h3 class="fw-bold p-3">Entre em contato!</h3>
+        <form id="contato">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingNome" placeholder="name@example.com">
+            <label for="floatingNome">Nome</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+            <label for="floatingEmail">Email</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="floatingTelefone" placeholder="Telefone">
+            <label for="floatingTelefone">Telefone</label>
+          </div>
+          <select class="form-select mb-3" aria-label="Default select example">
+            <option selected>Preferência de contato:</option>
+            <option value="1">Email</option>
+            <option value="2">Whatsapp</option>
+            <option value="3">Ligação</option>
+          </select>
+          <div class="text-start">
+            <label for="nivel-satisfacao" class="form-label">Nível de satisfação:</label>
+            <input type="range" class="form-range" min="0" max="5" id="nivel-satisfacao">
+          </div>
+          <div class="form-check text-start">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Deseja receber novidades e promoções por email?
+            </label>
+          </div>
+          <div>
+            <button class="btn btn-primary botao-padrao border-0 w-100 fw-bold mt-3 py-2">Enviar</button>
+          </div>
+          
+        </form>
+      </div>
     </section>
   </main>
 
@@ -260,29 +297,30 @@
   </div>
 
   <!-- Modal 1 -->
-  <div class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <article class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
+        <header class="modal-header">
           <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Cafés tradicionais</h2>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
+        </header>
+        <section class="modal-body">
           <img src="./assets/produtos-cafe-tradicional.png" class="w-100" alt="Xícara de café preto.">
           <p>O café Serenatto é conhecido por seus blends tradicionais e saborosos, que agradam aos amantes da bebida.
             Nossos grãos são cuidadosamente selecionados e torrados para produzir um aroma rico e sabor
             equilibrado.
-            </p>
-            <p>Entre os cafés mais tradicionais da casa, destaca-se o "Café Serenatto", um blend exclusivo de
+          </p>
+          <p>Entre os cafés mais tradicionais da casa, destaca-se o "Café Serenatto", um blend exclusivo de
             grãos com notas de chocolate e caramelo. Outra opção popular é o "Café Italiano", um café expresso encorpado
             e intenso. Já o "Café Cappuccino" é uma escolha clássica para quem prefere uma bebida cremosa e suave.</p>
-        </div>
-        <div class="modal-footer mx-auto">
-          <button type="button" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal">Fechar janela</button>
-        </div>
+        </section>
+        <footer class="modal-footer mx-auto">
+          <button type="button" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal">Fechar
+            janela</button>
+        </footer>
       </div>
     </div>
-  </div>
+  </article>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
