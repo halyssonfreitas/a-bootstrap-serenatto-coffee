@@ -6,6 +6,10 @@ body {
   height: 4000px;
 }
 
+footer {
+  background-color: var(--marrom-claro);
+}
+
 input[type=checkbox] {
   border: 2px solid var(--marrom-claro);
   box-shadow: none;
